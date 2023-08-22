@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header {
+    background: #270082;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s eas-in;
+    font-size: 15px;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s eas-in;
+}
+
+.hero_section {
+    background-image: url("img1.jpg");
+    background-size: cover;
+    height: 100vh;
+
+    display: grid;
+    color: aliceblue;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hero_section .container h1 {
+    font-size: 50px;
+}
+
+.hero_section .container h3 {
+    font-size: 40px;
+}
+
+.hero_section .container p {
+    font-size: 20px;
+}
+
+.music-section {
+    /* max-width: 1200px; */
+    padding-top: 50px;
+    height: 800px;
+    background: #281154;
+
+
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.music-section .container h2 {
+    font-size: 35px;
+    font-weight: 400;
+
+}
+
+.music-section .container h4 {
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 50px;
+
+}
+
+.music-section .container h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    text-align: justify;
+    text-align: center;
+}
+
+.primary-btn {
+    color: aliceblue;
+    background-color: red;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 1px solid black;
+}
+
+
+
+.music-section .container p {
+    font-size: 13px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    text-align: justify;
+    text-align: center;
+}
+
+.about-music {
+    padding-top: 400px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.about-music.container h2 {
+    font-size: 35px;
+}
+
+.about-music.container p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.secondary_btn{
+    color: aliceblue;
+    background-color: #281154;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 1px solid black;
+}
+
+.video-section{
+    min-height: 800px;
+    background-image: url(Videos.png);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.video-section .containers{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -300px;
+    gap: 30px;
+}
+.video-section .containers h2{
+    font-size: 40px;
+}
+
+.video-section .containers p{
+    font-size: 20px;
+}
+
+.gift_card{
+    margin: 100px;
+}
+
+
+.gift_container{
+    display: flex;
+    gap: 60px;
+}
+
+
+.gift_card .gift_container .gift_content{
+    max-width: 700px;
+}
+
+.gift_card .gift_container .gift_content h2{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.gift_card .gift_container .gift_content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 30px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.gift_card .gift_container .gift_content hr{
+    margin-bottom: 20px;
+}
+
+.secondary_btn:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #5500f4;
+    box-shadow: 5px 5px 5px rgba(1,1,1, 0.3);
+}
+
+
+.footer_container{
+    display: flex;
+    /* justify-content: space-between; */
+    color: aliceblue;
+    background: #1B0058;
+    justify-content: center;
+    align-items: center;
+    gap:200px;  
+    padding: 20px;
+}
+
+.footer_container .shop,.about,.education,.store h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer_container .shop,.about,.education,.store hr{
+    margin-bottom: 10px;
+    width: 130px;
+}
+
+.footer_container .shop,.about,.education,.store ul li{
+    font-size: 13px;
+    font-weight:100;
+}
+
+.foot{
+    background-color: #270082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
